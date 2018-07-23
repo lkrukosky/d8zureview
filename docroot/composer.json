@@ -7,7 +7,8 @@
         "composer/installers": "^1.0.24",
         "drupal/core": "^8.5",
         "wikimedia/composer-merge-plugin": "^1.4",
-        "drupal/video_embed_field": "^2.0"
+        "drupal/video_embed_field": "^2.0",
+        "drupal/content_sync": "^2.0"
     },
     "replace": {
     },
