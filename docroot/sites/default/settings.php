@@ -789,6 +789,12 @@ $databases['default']['default'] = array (
 $config_directories['sync'] = '../config/sync';
 
 /**
+ * Content sync directory
+ */
+global $content_directories;
+$content_directories['sync'] = $app_root.'/../content/sync';
+
+/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
