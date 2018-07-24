@@ -9,7 +9,8 @@
         "wikimedia/composer-merge-plugin": "^1.4",
         "drupal/video_embed_field": "^2.0",
         "drupal/content_sync": "^2.0",
-        "drupal/commerce": "^2.8"
+        "drupal/commerce": "^2.8",
+        "drupal/field_collection": "^1.0@alpha"
     },
     "replace": {
     },
