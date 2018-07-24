@@ -1,7 +1,7 @@
 <?php
 
-/* {# inline_template_start #}{{ message }} */
-class __TwigTemplate_70e1a31703d0ad0d19d68737c4fe80cbf0c45d981f4e0af92281a2de37518b20 extends Twig_Template
+/* core/themes/classy/templates/form/confirm-form.html.twig */
+class __TwigTemplate_9bd8404cf18ea2c9f4fb38bf5193ed1303913d1da4d1de909f9885714943b680 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -39,13 +39,15 @@ class __TwigTemplate_70e1a31703d0ad0d19d68737c4fe80cbf0c45d981f4e0af92281a2de375
             throw $e;
         }
 
-        // line 1
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["message"] ?? null), "html", null, true));
+        // line 13
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["form"] ?? null), "html", null, true));
+        echo "
+";
     }
 
     public function getTemplateName()
     {
-        return "{# inline_template_start #}{{ message }}";
+        return "core/themes/classy/templates/form/confirm-form.html.twig";
     }
 
     public function isTraitable()
@@ -55,7 +57,7 @@ class __TwigTemplate_70e1a31703d0ad0d19d68737c4fe80cbf0c45d981f4e0af92281a2de375
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  43 => 13,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -68,6 +70,6 @@ class __TwigTemplate_70e1a31703d0ad0d19d68737c4fe80cbf0c45d981f4e0af92281a2de375
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "{# inline_template_start #}{{ message }}", "");
+        return new Twig_Source("", "core/themes/classy/templates/form/confirm-form.html.twig", "/var/www/d8zureview/docroot/core/themes/classy/templates/form/confirm-form.html.twig");
     }
 }
