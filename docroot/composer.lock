@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c24a7a172a0b1d7eb1eb2b87bc9fe80",
+    "content-hash": "caeb9f91daddcca123a7dd4375bb96eb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -801,6 +801,67 @@
             }
         },
         {
+            "name": "drupal/audiofield",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/audiofield",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/audiofield-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "bd63641c2ed9e9774b82423bf03c95540b395126"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1514414884",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Moberly",
+                    "homepage": "https://www.drupal.org/u/danielmoberly",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "josipsaric",
+                    "homepage": "https://www.drupal.org/user/3063287"
+                },
+                {
+                    "name": "msajko",
+                    "homepage": "https://www.drupal.org/user/3483723"
+                },
+                {
+                    "name": "tamerzg",
+                    "homepage": "https://www.drupal.org/user/464564"
+                }
+            ],
+            "description": "AudioField Module",
+            "homepage": "https://www.drupal.org/project/audiofield",
+            "support": {
+                "source": "http://cgit.drupalcode.org/audiofield",
+                "issues": "https://www.drupal.org/project/issues/audiofield"
+            }
+        },
+        {
             "name": "drupal/commerce",
             "version": "2.8.0",
             "source": {
@@ -1172,6 +1233,220 @@
             "time": "2018-07-04T21:08:11+00:00"
         },
         {
+            "name": "drupal/dropzonejs",
+            "version": "2.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/dropzonejs",
+                "reference": "8.x-2.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-2.0-alpha3.zip",
+                "reference": "8.x-2.0-alpha3",
+                "shasum": "a11f37e8f37b211d7065b0fd8adb1cc85b47e691"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/entity_browser": "*"
+            },
+            "suggest": {
+                "enyo/dropzone": "Required to user drupal/dropzonejs. Dropzone is an easy to use drag'n'drop library."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-alpha3",
+                    "datestamp": "1513265285",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Janez Urevc",
+                    "homepage": "https://drupal.org/u/slashrsm",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Christian Fritsch",
+                    "homepage": "https://drupal.org/u/chrfritsch",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Primoz Hmeljak",
+                    "homepage": "https://drupal.org/u/Primsi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1998478/committers",
+                    "role": "contributor"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "wouters_f",
+                    "homepage": "https://www.drupal.org/user/721548"
+                },
+                {
+                    "name": "zkday",
+                    "homepage": "https://www.drupal.org/user/888644"
+                }
+            ],
+            "description": "Drupal integration for DropzoneJS - An open source library that provides drag’n’drop file uploads with image previews.",
+            "homepage": "https://www.drupal.org/project/dropzonejs",
+            "keywords": [
+                "DropzoneJS",
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://www.drupal.org/project/dropzonejs",
+                "issues": "https://www.drupal.org/project/issues/dropzonejs",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/dropzonejs_eb_widget",
+            "version": "2.0.0-alpha3",
+            "require": {
+                "drupal/core": "*",
+                "drupal/dropzonejs": "self.version",
+                "drupal/entity_browser": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-alpha3",
+                    "datestamp": "1513265285",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "Drupal media CI",
+                    "homepage": "https://www.drupal.org/user/3057985"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "wouters_f",
+                    "homepage": "https://www.drupal.org/user/721548"
+                },
+                {
+                    "name": "zkday",
+                    "homepage": "https://www.drupal.org/user/888644"
+                }
+            ],
+            "description": "DropzoneJS Entity browser widget",
+            "homepage": "https://www.drupal.org/project/dropzonejs",
+            "support": {
+                "source": "http://cgit.drupalcode.org/dropzonejs"
+            }
+        },
+        {
+            "name": "drupal/embed",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/embed",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "cc746ad807260e01c7788dd82110dcebbb4d678a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1490755685",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "cs_shadow",
+                    "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Provide a framework for various different types of embeds in WYSIWYG editors, common functionality, interfaces, and standards.",
+            "homepage": "https://www.drupal.org/project/embed",
+            "support": {
+                "source": "http://cgit.drupalcode.org/embed",
+                "issues": "https://www.drupal.org/project/issues/embed",
+                "irc": "irc://irc.freenode.org/drupal-media"
+            }
+        },
+        {
             "name": "drupal/entity",
             "version": "1.0.0-beta4",
             "source": {
@@ -1232,6 +1507,159 @@
             "homepage": "http://drupal.org/project/entity",
             "support": {
                 "source": "http://cgit.drupalcode.org/entity"
+            }
+        },
+        {
+            "name": "drupal/entity_browser",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_browser",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "6d12a9eea0fa9a50ef942ea51b29b772c4a76f6a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/ctools": "*",
+                "drupal/inline_entity_form": "*",
+                "drupal/media_entity": "*",
+                "drupal/paragraphs": "*",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev",
+                    "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1528140780",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Janez Urevc",
+                    "homepage": "https://github.com/slashrsm",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Primoz Hmeljak",
+                    "homepage": "https://github.com/primsi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1943336/committers",
+                    "role": "contributor"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "marcingy",
+                    "homepage": "https://www.drupal.org/user/77320"
+                },
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Entity browsing and selecting component.",
+            "homepage": "http://drupal.org/project/entity_browser",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_browser",
+                "issues": "http://drupal.org/project/issues/entity_browser",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/entity_embed",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_embed",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "21cdeb2b058efce461683aed9a8951053512dca7"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/embed": "*"
+            },
+            "require-dev": {
+                "drupal/entity_browser": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1476698339",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "cs_shadow",
+                    "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Allows any entity to be embedded within a text area using a WYSIWYG editor.",
+            "homepage": "https://www.drupal.org/project/entity_embed",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_embed",
+                "issues": "https://www.drupal.org/project/issues/entity_embed",
+                "irc": "irc://irc.freenode.org/drupal-media"
             }
         },
         {
@@ -1413,6 +1841,137 @@
             "homepage": "https://www.drupal.org/project/field_collection",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_collection"
+            }
+        },
+        {
+            "name": "drupal/file_browser",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/file_browser",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_browser-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "1afdbfac4531e0d74838c7bbb63ebf42bbe0f655"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/dropzonejs": "*",
+                "drupal/dropzonejs_eb_widget": "*",
+                "drupal/entity_browser": "*",
+                "drupal/entity_embed": "*"
+            },
+            "require-dev": {
+                "drupal/ctools": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1493226843",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                }
+            ],
+            "description": "Provides a default Entity Browser for files, using Masonry and Imagesloaded.",
+            "homepage": "https://www.drupal.org/project/file_browser",
+            "support": {
+                "source": "http://cgit.drupalcode.org/file_browser"
+            }
+        },
+        {
+            "name": "drupal/h5p",
+            "version": "1.0.0-rc7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/h5p",
+                "reference": "8.x-1.0-rc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/h5p-8.x-1.0-rc7.zip",
+                "reference": "8.x-1.0-rc7",
+                "shasum": "5263c306fb03ed47622c1db039dc0f8ac3892749"
+            },
+            "require": {
+                "drupal/core": "*",
+                "h5p/h5p-core": "1.18.0",
+                "h5p/h5p-editor": "1.17.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc7",
+                    "datestamp": "1526977384",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jamesap",
+                    "homepage": "https://www.drupal.org/user/2547544"
+                },
+                {
+                    "name": "falcon",
+                    "homepage": "https://www.drupal.org/user/530912"
+                },
+                {
+                    "name": "icc",
+                    "homepage": "https://www.drupal.org/user/823190"
+                },
+                {
+                    "name": "joergM",
+                    "homepage": "https://www.drupal.org/user/502644"
+                },
+                {
+                    "name": "otacke",
+                    "homepage": "https://www.drupal.org/user/3566173"
+                },
+                {
+                    "name": "paalj",
+                    "homepage": "https://www.drupal.org/user/1091732"
+                },
+                {
+                    "name": "thomasmars",
+                    "homepage": "https://www.drupal.org/user/3205159"
+                },
+                {
+                    "name": "timothyylim",
+                    "homepage": "https://www.drupal.org/user/3420067"
+                }
+            ],
+            "description": "Drupal H5P Module.",
+            "homepage": "http://drupal.org/project/h5p",
+            "support": {
+                "source": "http://cgit.drupalcode.org/h5p"
             }
         },
         {
@@ -2066,6 +2625,119 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "h5p/h5p-core",
+            "version": "1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h5p/h5p-php-library.git",
+                "reference": "942a083afa46e37f872a35b06890de3414237dcd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h5p/h5p-php-library/zipball/942a083afa46e37f872a35b06890de3414237dcd",
+                "reference": "942a083afa46e37f872a35b06890de3414237dcd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "h5p.classes.php",
+                    "h5p-development.class.php",
+                    "h5p-file-storage.interface.php",
+                    "h5p-default-storage.class.php",
+                    "h5p-event-base.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Svein-Tore Griff With",
+                    "email": "with@joubel.com",
+                    "homepage": "http://joubel.com",
+                    "role": "CEO"
+                },
+                {
+                    "name": "Frode Petterson",
+                    "email": "frode.petterson@joubel.com",
+                    "homepage": "http://joubel.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "H5P Core functionality in PHP",
+            "homepage": "https://h5p.org",
+            "keywords": [
+                "content",
+                "h5p",
+                "hvp",
+                "interactive",
+                "quiz"
+            ],
+            "time": "2018-05-16T13:16:34+00:00"
+        },
+        {
+            "name": "h5p/h5p-editor",
+            "version": "1.17.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h5p/h5p-editor-php-library.git",
+                "reference": "06e52c65be4323a721172ee7eb8b80908c4ce6be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h5p/h5p-editor-php-library/zipball/06e52c65be4323a721172ee7eb8b80908c4ce6be",
+                "reference": "06e52c65be4323a721172ee7eb8b80908c4ce6be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "h5peditor.class.php",
+                    "h5peditor-file.class.php",
+                    "h5peditor-ajax.class.php",
+                    "h5peditor-storage.interface.php",
+                    "h5peditor-ajax.interface.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Svein-Tore Griff With",
+                    "email": "with@joubel.com",
+                    "homepage": "http://joubel.com",
+                    "role": "CEO"
+                },
+                {
+                    "name": "Frode Petterson",
+                    "email": "frode.petterson@joubel.com",
+                    "homepage": "http://joubel.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "H5P Editor functionality in PHP",
+            "homepage": "https://h5p.org",
+            "keywords": [
+                "content",
+                "editor",
+                "h5p",
+                "hvp",
+                "interactive",
+                "quiz"
+            ],
+            "time": "2018-01-22T12:39:38+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -5664,6 +6336,8 @@
     "stability-flags": {
         "drupal/field_collection": 15,
         "drupal/entity_legal": 10,
+        "drupal/h5p": 5,
+        "drupal/dropzonejs": 15,
         "behat/mink": 20,
         "behat/mink-selenium2-driver": 20
     },

@@ -11,7 +11,12 @@
         "drupal/content_sync": "^2.0",
         "drupal/commerce": "^2.8",
         "drupal/field_collection": "^1.0@alpha",
-        "drupal/entity_legal": "^2.0@beta"
+        "drupal/entity_legal": "^2.0@beta",
+        "drupal/h5p": "^1.0@RC",
+        "drupal/audiofield": "^1.6",
+        "drupal/entity_browser": "^1.5",
+        "drupal/dropzonejs": "^2.0@alpha",
+        "drupal/file_browser": "^1.1"
     },
     "replace": {
     },

@@ -794,6 +794,7 @@ $config_directories['sync'] = '../config/sync';
 global $content_directories;
 $content_directories['sync'] = $app_root.'/../content/sync';
 
+
 /**
  * Load local development override configuration, if available.
  *
