@@ -1349,6 +1349,59 @@
         }
     },
     {
+        "name": "drupal/copyprevention",
+        "version": "1.0.0-alpha1",
+        "version_normalized": "1.0.0.0-alpha1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/copyprevention",
+            "reference": "8.x-1.0-alpha1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/copyprevention-8.x-1.0-alpha1.zip",
+            "reference": "8.x-1.0-alpha1",
+            "shasum": "7ebcd1017f86df402068c22b6497c6df0be164a4"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha1",
+                "datestamp": "1498628643",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Alpha releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "duozersk",
+                "homepage": "https://www.drupal.org/user/378397"
+            },
+            {
+                "name": "nehajyoti",
+                "homepage": "https://www.drupal.org/user/2804915"
+            }
+        ],
+        "description": "Makes copying from your site harder.",
+        "homepage": "https://www.drupal.org/project/copyprevention",
+        "support": {
+            "source": "http://cgit.drupalcode.org/copyprevention"
+        }
+    },
+    {
         "name": "drupal/core",
         "version": "8.5.5",
         "version_normalized": "8.5.5.0",

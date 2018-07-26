@@ -16,7 +16,8 @@
         "drupal/audiofield": "^1.6",
         "drupal/entity_browser": "^1.5",
         "drupal/dropzonejs": "^2.0@alpha",
-        "drupal/file_browser": "^1.1"
+        "drupal/file_browser": "^1.1",
+        "drupal/copyprevention": "^1.0@alpha"
     },
     "replace": {
     },

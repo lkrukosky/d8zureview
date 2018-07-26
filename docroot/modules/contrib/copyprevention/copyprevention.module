@@ -1,0 +1,83 @@
+<?php
+/**
+ * @file
+ * Main file for Copy Prevention module.
+ */
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function copyprevention_preprocess_html(&$vars) {
+  if (\Drupal::currentUser()->hasPermission('bypass copy prevention')) {
+    return;
+  }
+
+  $body_settings = array_filter(\Drupal::configFactory()->getEditable('copyprevention.settings')->get('copyprevention_body'));
+  if (is_array($vars['attributes'])) {
+    $vars['attributes'] = new Attribute();
+  }
+  foreach ($body_settings as $value) {
+    $vars['attributes']->setAttribute('on' . $value, 'return false');
+  }
+}
+
+
+/**
+ * Implements hook_page_attachments().
+ */
+function copyprevention_page_attachments(&$page) {
+  global $base_url;
+
+  $copyprevention_images_search = array_filter(\Drupal::configFactory()->getEditable('copyprevention.settings')->get('copyprevention_images_search'));
+  if (array_key_exists('httpheader', $copyprevention_images_search)) {
+    $page['#attached']['http_header'][] = array('X-Robots-Tag', 'noimageindex', TRUE);
+  }
+  if (array_key_exists('pagehead', $copyprevention_images_search)) {
+    $data = array(
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'robots',
+        'content' => 'noimageindex',
+      ),
+    );
+    $page['#attached']['html_head'][] = array($data, 'copyprevention_images_search');
+  }
+
+  if (\Drupal::currentUser()->hasPermission('bypass copy prevention')) {
+    return;
+  }
+  $path = $base_url . '/'.drupal_get_path('module', 'copyprevention');
+  $settings = array(
+    'body' => array_filter(\Drupal::configFactory()->getEditable('copyprevention.settings')->get('copyprevention_body')),
+    'images' => array_filter(\Drupal::configFactory()->getEditable('copyprevention.settings')->get('copyprevention_images')),
+    'images_min_dimension' => \Drupal::configFactory()->getEditable('copyprevention.settings')->get('copyprevention_images_min_dimension'),
+    'transparentgif' => file_create_url($path . '/transparent.gif'),
+
+  );
+  $page['#attached']['drupalSettings']['copyprevention'] = $settings;
+  $page['#attached']['library'][] = 'copyprevention/copyprevention';
+}
+
+/**
+ * Implements hook_robotstxt().
+ */
+function copyprevention_robotstxt() {
+  $copyprevention_images_search = array_filter(\Drupal::configFactory()->getEditable('copyprevention.settings')->get('copyprevention_images_search'));
+
+  if (array_key_exists('robotstxt', $copyprevention_images_search)) {
+    return array(
+      '#Copy Prevention: protect/hide images from search engines indexing',
+      'Disallow: *.jpg',
+      'Disallow: *.JPG',
+      'Disallow: *.jpeg',
+      'Disallow: *.JPEG',
+      'Disallow: *.png',
+      'Disallow: *.PNG',
+      'Disallow: *.gif',
+      'Disallow: *.GIF',
+    );
+  }
+
+  return array();
+}

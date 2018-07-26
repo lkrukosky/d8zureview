@@ -1,0 +1,11 @@
+name: 'Copy Prevention'
+description: 'Makes copying from your site harder.'
+package: 'User interface'
+# core: 8.x
+type: module
+
+# Information added by Drupal.org packaging script on 2017-06-28
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'copyprevention'
+datestamp: 1498628645
