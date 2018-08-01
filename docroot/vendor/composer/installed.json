@@ -2470,6 +2470,59 @@
         }
     },
     {
+        "name": "drupal/printfriendly",
+        "version": "3.3.0",
+        "version_normalized": "3.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/printfriendly",
+            "reference": "8.x-3.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/printfriendly-8.x-3.3.zip",
+            "reference": "8.x-3.3",
+            "shasum": "7dcbc81739ca1b33f3cff8518252b9b9cad98f87"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.3",
+                "datestamp": "1511338685",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "anon",
+                "homepage": "https://www.drupal.org/user/464598"
+            },
+            {
+                "name": "printfriendly",
+                "homepage": "https://www.drupal.org/user/2220908"
+            }
+        ],
+        "description": "Easily print any page through Printfriendly.",
+        "homepage": "https://www.drupal.org/project/printfriendly",
+        "support": {
+            "source": "http://cgit.drupalcode.org/printfriendly"
+        }
+    },
+    {
         "name": "drupal/profile",
         "version": "1.0.0-rc1",
         "version_normalized": "1.0.0.0-RC1",
@@ -2537,6 +2590,63 @@
         "homepage": "http://drupal.org/project/profile",
         "support": {
             "source": "http://cgit.drupalcode.org/profile"
+        }
+    },
+    {
+        "name": "drupal/simplify",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/simplify",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/simplify-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "dc33a1253b5a4c714ade8494241e7386f7d03939"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1450359239",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "BWPanda",
+                "homepage": "https://www.drupal.org/user/289407"
+            },
+            {
+                "name": "Dom.",
+                "homepage": "https://www.drupal.org/user/801982"
+            },
+            {
+                "name": "markoshust",
+                "homepage": "https://www.drupal.org/user/524308"
+            }
+        ],
+        "description": "Simplifies the user interface by hiding particular fields.",
+        "homepage": "https://www.drupal.org/project/simplify",
+        "support": {
+            "source": "http://cgit.drupalcode.org/simplify"
         }
     },
     {

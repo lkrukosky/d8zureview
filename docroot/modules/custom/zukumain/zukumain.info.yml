@@ -1,0 +1,8 @@
+name : 'Zukumain'
+type: module
+description : 'Zukureview main module.'
+package: Custom
+core: 8.x
+dependencies:
+configure:
+recommends:

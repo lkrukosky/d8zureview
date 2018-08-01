@@ -1,0 +1,6 @@
+zuku_main:
+    path: /zukumain
+    defaults:
+        _controller: Drupal\zukumain\Controller\ZukuMainController::zuku
+    requirements:
+        _permission: 'access content'
