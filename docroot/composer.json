@@ -19,7 +19,8 @@
         "drupal/file_browser": "^1.1",
         "drupal/copyprevention": "^1.0@alpha",
         "drupal/simplify": "^1.0",
-        "drupal/printfriendly": "^3.3"
+        "drupal/printfriendly": "^3.3",
+        "drupal/masquerade": "^2.0@beta"
     },
     "replace": {
     },
