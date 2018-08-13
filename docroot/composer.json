@@ -7,20 +7,28 @@
         "composer/installers": "^1.0.24",
         "drupal/core": "^8.5",
         "wikimedia/composer-merge-plugin": "^1.4",
-        "drupal/video_embed_field": "^2.0",
-        "drupal/content_sync": "^2.0",
-        "drupal/commerce": "^2.8",
-        "drupal/field_collection": "^1.0@alpha",
-        "drupal/entity_legal": "^2.0@beta",
-        "drupal/h5p": "^1.0@RC",
+        "drupal/admin_toolbar": "^1.2",
         "drupal/audiofield": "^1.6",
-        "drupal/entity_browser": "^1.5",
-        "drupal/dropzonejs": "^2.0@alpha",
-        "drupal/file_browser": "^1.1",
+        "drupal/block_class": "^1.0",
+        "drupal/block_visibility_groups": "^1.1",
+        "drupal/commerce": "^2.8",
+        "drupal/content_sync": "^2.0",
         "drupal/copyprevention": "^1.0@alpha",
-        "drupal/simplify": "^1.0",
+        "drupal/dropzonejs": "^2.0@alpha",
+        "drupal/entity_browser": "^1.5",
+        "drupal/entity_legal": "^2.0@beta",
+        "drupal/entity_usage": "^2.0@alpha",
+        "drupal/field_collection": "^1.0@alpha",
+        "drupal/file_browser": "^1.1",
+        "drupal/h5p": "^1.0@RC",
+        "drupal/masquerade": "^2.0@beta",
+        "drupal/paragraphs": "^1.3",
+        "drupal/pathauto": "^1.0",
         "drupal/printfriendly": "^3.3",
-        "drupal/masquerade": "^2.0@beta"
+        "drupal/simplify": "^1.0",
+        "drupal/token": "^1.1",
+        "drupal/video_embed_field": "^2.0",
+        "oomphinc/composer-installers-extender": "^1.1"
     },
     "replace": {
     },
@@ -46,14 +54,19 @@
             "replace": false,
             "merge-extra": false
         },
+	"installer-types": ["library"],
         "installer-paths": {
-            "core": ["type:drupal-core"],
-            "modules/contrib/{$name}": ["type:drupal-module"],
+            "core": ["type:drupal-core"],	
+            "modules/contrib/{$name}": ["type:drupal-module"],	
             "profiles/contrib/{$name}": ["type:drupal-profile"],
             "themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"],
             "modules/custom/{$name}": ["type:drupal-custom-module"],
-            "themes/custom/{$name}": ["type:drupal-custom-theme"]
+            "themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "libraries/{$name}": [
+		"type:drupal-library",
+		"enyo/dropzone"
+		]
         }
     },
     "autoload": {
@@ -71,10 +84,10 @@
         "phpcs": "phpcs --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",
         "phpcbf": "phpcbf --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --"
     },
-    "repositories": [
-        {
+    "repositories": {
+	"drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ]
+    }
 }
