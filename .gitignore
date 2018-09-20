@@ -1,0 +1,8 @@
+# This file contains root .gitignore rule.
+
+# Ignore dev files
+.settings
+.settings/
+.buildpath
+.project
+.idea
